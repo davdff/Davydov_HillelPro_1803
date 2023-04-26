@@ -3,7 +3,7 @@ class Person {
         this.name = name;
         this.age = age;
     }
-    info() {
+    getInfo() {
         console.log(`${this.name}, ${this.age}`)
     }
 }
@@ -25,7 +25,7 @@ class Car {
     };
     printInfo() {
         console.log(`Car: ${this.brand} ${this.model}, Year: ${this.year}, CarNum: ${this.carNum}`);
-        this.owner.info()
+        this.owner.getInfo()
     };
 }
 
