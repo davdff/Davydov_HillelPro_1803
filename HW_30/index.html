@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <img class="card_img" src="chair.jpg" alt="chair" />
+      <div class="card_header">Chair</div>
+      <div class="card_descr">Price: 50$</div>
+      <button class="card_btn">Buy</button>
+    </div>
+    <div class="overlay">
+      <div class="modal" id="order">
+        <div class="modal__close">&times;</div>
+        <form class="form" action="#">
+          <input name="name" required placeholder="Введіть ПІБ" type="text" />
+          <select class="select" name="city" required="required">
+            <option value="1">Оберіть місто</option>
+            <option value="Київ">Київ</option>
+            <option value="Запоріжжя">Запоріжжя</option>
+            <option value="Харків">Харків</option>
+            <option value="Дніпро">Дніпро</option>
+            <option value="Одеса">Одеса</option>
+          </select>
+          <input name="post" required placeholder="Склад Нової пошти" />
+          <label for="payment">Спосіб оплати</label>
+          <select id="payment" name="payment" required>
+            <option value="">Оберіть спосіб оплати</option>
+            <option value="Післяплата">Післяплата</option>
+            <option value="Оплата банківською карткою">
+              Оплата банківською карткою
+            </option>
+          </select>
+
+          <div class="quantity">
+            <button type="button" class="minus-btn">-</button>
+            <input type="text" name="quantity" id="quantity" value="1" />
+            <button type="button" class="plus-btn">+</button>
+          </div>
+
+          <textarea name="comm" id="comm" cols="30" rows="5"></textarea>
+          <button type="button" class="button_submit">Замовити</button>
+        </form>
+      </div>
+    </div>
+    <div class="overlay_submit">
+      <div class="modal_submit">
+        <div class="modal_submit_close">&times;</div>
+        <div class="modal_submit-name"></div>
+        <div class="modal_submit-city"></div>
+        <div class="modal_submit-post"></div>
+        <div class="modal_submit-payment"></div>
+        <div class="modal_submit-quantity"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
