@@ -1,0 +1,51 @@
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_wrapper {
+  margin: 25px auto;
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  background-color: lightblue;
+}
+.card_name {
+  margin-top: 25px;
+  font-size: 25px;
+}
+.card_img {
+  margin-top: 25px;
+  height: 150px;
+}
+.card_price {
+  margin-top: 25px;
+  font-size: 20px;
+}
+.order_btn {
+  margin-top: 50px;
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  background-color: lightcoral;
+  cursor: pointer;
+}
+
+.my_orders_btn {
+  margin: 0 auto;
+  width: 250px;
+  height: 50px;
+  background-color: lightgreen;
+  font-size: 25px;
+  cursor: pointer;
+}
