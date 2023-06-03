@@ -27,14 +27,11 @@ http.createServer(function (req, res) {
             });
 
             req.on('end', () => {
-                // Получение предложения из тела запроса
                 const newOffer = JSON.parse(body);
 
-                // Добавление предложения к существующим предложениям
                 const offers = JSON.parse(fs.readFileSync('offers.txt', 'utf8'));
                 offers.push(newOffer);
 
-                // Сохранение обновленного списка предложений
                 fs.writeFileSync('offers.txt', JSON.stringify(offers));
 
                 res.write('Offer added successfully');
